@@ -1,4 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# The Reading Room Café – Conceptual Redesign Case Study
+
+**This project is a conceptual redesign case study created for educational and portfolio purposes.**  
+It showcases a premium‑grade, responsive website for a local café concept, built with Next.js 16 (App Router) and vanilla CSS.
+
+---
+
+## Project Overview
+A quiet, library‑style café in Midtown Atlanta that blends specialty coffee, curated books, and comfortable workspaces.  
+The site demonstrates modern UI/UX patterns, accessibility best‑practices, and SEO‑focused metadata while remaining a **static, front‑end‑only** implementation.
+
+---
+
+## Conceptual Redesign Case Study
+- The café does *not* exist; the project is a realistic mock‑up meant for an internship portfolio.  
+- All contact details are clearly labeled as **demonstration data** (`+1 555 0199`, WhatsApp link, mock address).  
+- No backend or real‑world data storage is involved.
+
+---
+
+## Features
+- Hero section with daily coffee recommendation (auto‑rotates by weekday).  
+- Calendar‑style **Events** page with WhatsApp RSVP buttons.  
+- **Menu** with tabbed categories & dietary notice.  
+- Asymmetrical **Gallery** with lightbox, filter controls, and keyboard navigation.  
+- Contact page with opening‑hours widget, map mock, and the floating action bar (FAB).  
+- Dark‑mode toggle and theme persistence.
+
+---
+
+## Tech Stack
+| Layer | Technology |
+|------|-------------|
+| Framework | **Next.js 16 (App Router)** |
+| Language | **React 19** (client components) |
+| Styling | **Vanilla CSS** with HSL design tokens & custom spacing variables |
+| Fonts | **next/font/google** – Inter, Playfair Display, Lora |
+| Build | Turbopack (default Next.js optimizer) |
+| Lint | ESLint (Next.js preset) |
+
+---
+
+## Accessibility Features
+- Semantic HTML5 structure with a single **`<h1>`** per page.  
+- Proper ARIA roles/labels for navigation, tabs, dialogs, and FAB actions.  
+- Focus‑visible outlines (`:focus-visible`) and logical tab order.  
+- Keyboard‑controlled lightbox (Esc / ← / →).  
+- Color contrast meets WCAG AA (using calibrated HSL palette).
+
+---
+
+## SEO Improvements
+- Global `metadata` helper (`src/lib/seo.js`) supplies unique **title**, **description**, and Open Graph tags for every route.  
+- Clean URLs, `lang="en"` on `<html>`, and `viewport` settings.  
+- Structured address markup (`<address>` with micro‑data) on the Contact page.
+
+---
+
+## Performance Optimizations
+- Fonts loaded via **`next/font/google`** – no external CSS requests.  
+- Static generation for all pages (`next build` → 100 % static).  
+- Image assets served with `next/image` (lazy‑loaded except hero).  
+- CSS variables for spacing reduce duplicated values, and `backdrop-filter` is hardware‑accelerated.
+
+---
+
+## Installation
+
+```bash
+git clone https://github.com/aditisingh1027/FUTURE_FS_03.git
+cd FUTURE_FS_03
+npm ci            # install exact lockfile versions
+npm run dev       # start dev server at http://localhost:3000
+```
+
+---
+
+## Usage
+- Explore the site locally or deploy to Vercel/Netlify for a live demo.  
+- Review the code for accessibility patterns, SEO metadata, and performance tricks.
+
+---
+
+## License
+MIT License – see `LICENSE` file.
+
 
 ## Getting Started
 

@@ -2,6 +2,7 @@
   "name": "temp-next-app",
   "version": "0.1.0",
   "private": true,
+  "description": "Conceptual redesign case study of The Reading Room Café – a premium, accessible, SEO‑optimized static site built with Next.js.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
