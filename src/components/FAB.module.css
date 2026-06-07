@@ -1,0 +1,54 @@
+.fabBar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3.5rem;
+  background-color: hsla(var(--bg-color) / 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid hsl(var(--border-color));
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.05);
+  z-index: 90;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 0.5rem;
+}
+
+.actionItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: hsl(var(--text-muted));
+  flex: 1;
+  height: 100%;
+  transition: color var(--transition-speed);
+}
+
+.actionItem:hover, .actionItem:active {
+  color: hsl(var(--text-color));
+}
+
+.actionItem svg {
+  color: hsl(var(--primary-color));
+}
+
+.divider {
+  width: 1px;
+  height: 1.75rem;
+  background-color: hsl(var(--border-color));
+}
+
+@media (max-width: 768px) {
+  .fabBar {
+    display: flex;
+  }
+}

@@ -1,0 +1,204 @@
+.eventsSection {
+  padding: 5rem 0;
+}
+
+.header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 4.5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label {
+  font-family: var(--font-sans);
+  font-size: 0.725rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: hsl(var(--accent-color));
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 1.25rem;
+  color: hsl(var(--text-color));
+}
+
+.description {
+  font-family: var(--font-serif-body);
+  font-size: 1.05rem;
+  color: hsl(var(--text-muted));
+  line-height: 1.6;
+}
+
+.eventsList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.eventCard {
+  background-color: hsl(var(--bg-offset-color));
+  border: 1px solid hsl(var(--border-color));
+  border-radius: 4px;
+  padding: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+  transition: transform var(--transition-speed), border-color var(--transition-speed), background-color var(--transition-speed);
+}
+
+.eventCard:hover {
+  transform: translateY(-2px);
+  border-color: hsl(var(--text-muted) / 0.3);
+}
+
+.eventInfo {
+  flex: 1;
+}
+
+.metaRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.eventType {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: hsl(var(--accent-color));
+  background-color: hsl(var(--bg-color));
+  border: 1px solid hsl(var(--border-color));
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.eventSchedule {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: hsl(var(--text-muted));
+}
+
+.eventTitle {
+  font-family: var(--font-serif-header);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: hsl(var(--text-color));
+  margin-bottom: 0.75rem;
+  line-height: 1.25;
+}
+
+.eventDesc {
+  font-family: var(--font-serif-body);
+  font-size: 0.95rem;
+  color: hsl(var(--text-muted));
+  line-height: 1.6;
+}
+
+.eventAction {
+  flex-shrink: 0;
+}
+
+.rsvpBtn {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  background-color: hsl(var(--primary-color));
+  color: hsl(var(--bg-color));
+  padding: 0.8rem 1.35rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: opacity var(--transition-speed), transform var(--transition-speed);
+}
+
+.rsvpBtn:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+.rsvpBtn:active {
+  transform: translateY(0);
+}
+
+/* Callout Section */
+.communityCallout {
+  max-width: 900px;
+  margin: 5rem auto 0 auto;
+  background-color: hsl(var(--bg-color));
+  border: 1.5px dashed hsl(var(--border-color));
+  border-radius: 4px;
+  padding: 3.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calloutTitle {
+  font-family: var(--font-serif-header);
+  font-size: 1.75rem;
+  color: hsl(var(--text-color));
+  margin-bottom: 1rem;
+}
+
+.calloutText {
+  font-family: var(--font-serif-body);
+  font-size: 1rem;
+  color: hsl(var(--text-muted));
+  line-height: 1.6;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.calloutBtn {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  border: 1.5px solid hsl(var(--text-color));
+  color: hsl(var(--text-color));
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  transition: background-color var(--transition-speed);
+}
+
+.calloutBtn:hover {
+  background-color: hsl(var(--bg-offset-color));
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.25rem;
+  }
+  .eventCard {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 2rem;
+    gap: 1.5rem;
+  }
+  .rsvpBtn {
+    justify-content: center;
+    width: 100%;
+  }
+  .communityCallout {
+    padding: 2rem;
+    margin-top: 3.5rem;
+  }
+}

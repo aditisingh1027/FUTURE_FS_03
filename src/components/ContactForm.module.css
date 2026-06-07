@@ -1,0 +1,128 @@
+.formContainer {
+  background-color: hsl(var(--bg-offset-color));
+  border: 1px solid hsl(var(--border-color));
+  border-radius: 4px;
+  padding: 3rem;
+  box-shadow: var(--card-shadow);
+  transition: background-color var(--transition-speed), border-color var(--transition-speed);
+}
+
+.formTitle {
+  font-family: var(--font-serif-header);
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: hsl(var(--text-color));
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  font-family: var(--font-sans);
+  font-size: 0.775rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: hsl(var(--text-color));
+}
+
+.input, .textarea {
+  background-color: hsl(var(--bg-color));
+  border: 1px solid hsl(var(--border-color));
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: hsl(var(--text-color));
+  transition: border-color var(--transition-speed), background-color var(--transition-speed);
+  width: 100%;
+}
+
+.input:focus, .textarea:focus {
+  outline: none;
+  border-color: hsl(var(--primary-color));
+}
+
+.inputError {
+  border-color: #ef4444 !important;
+}
+
+.errorText {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #ef4444;
+}
+
+.submitBtn {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  background-color: hsl(var(--primary-color));
+  color: hsl(var(--bg-color));
+  padding: 0.85rem;
+  border-radius: 4px;
+  text-align: center;
+  transition: opacity var(--transition-speed), transform var(--transition-speed);
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+.submitBtn:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+.submitBtn:active {
+  transform: translateY(0);
+}
+
+/* Toast alert notification */
+.toast {
+  background-color: hsl(var(--primary-color));
+  color: hsl(var(--bg-color));
+  padding: 1rem 1.25rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  animation: slideInDown 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.toastText {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 576px) {
+  .formContainer {
+    padding: 2rem 1.25rem;
+  }
+}
