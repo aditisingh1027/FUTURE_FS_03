@@ -17,7 +17,7 @@ export default function Footer() {
               * This website is a premium conceptual redesign of a local independent business, optimized for professional review.
             </span>
           </div>
-          
+
           <div className={styles.linksColumn}>
             <h4 className={styles.heading}>Explore</h4>
             <ul className={styles.list}>
@@ -28,7 +28,7 @@ export default function Footer() {
               <li><Link href="/contact" className={styles.link}>Contact</Link></li>
             </ul>
           </div>
-          
+
           <div className={styles.hoursColumn}>
             <h4 className={styles.heading}>Hours of Operation</h4>
             <ul className={styles.hoursList}>
@@ -44,7 +44,7 @@ export default function Footer() {
             <p className={styles.quietNote}>Laptop-free zones enforced during weekend brunch hours.</p>
           </div>
         </div>
-        
+
         <div className={styles.bottomSection}>
           <p className={styles.copyright}>
             &copy; {new Date().getFullYear()} The Reading Room Café. All rights reserved. Conceptual Redesign.
@@ -54,7 +54,7 @@ export default function Footer() {
             <span className={styles.divider}>&middot;</span>
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>Facebook</a>
             <span className={styles.divider}>&middot;</span>
-            <a href="https://wa.me/15550199" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>WhatsApp Chat</a>
+            <a href="https://wa.me/910000000000" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>WhatsApp Chat</a>
           </div>
         </div>
       </div>

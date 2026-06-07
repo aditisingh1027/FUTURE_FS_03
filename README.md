@@ -6,7 +6,7 @@ It showcases a premium‑grade, responsive website for a local café concept, bu
 ---
 
 ## Project Overview
-A quiet, library‑style café in Midtown Atlanta that blends specialty coffee, curated books, and comfortable workspaces.  
+A quiet, library‑style café in Indiranagar, Bengaluru that blends specialty coffee, curated books, and comfortable workspaces.  
 The site demonstrates modern UI/UX patterns, accessibility best‑practices, and SEO‑focused metadata while remaining a **static, front‑end‑only** implementation.
 
 ---

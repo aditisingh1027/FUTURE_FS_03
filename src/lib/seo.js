@@ -25,7 +25,7 @@ export function getMetadata({ title, description, path = "", ogImage = "/assets/
       description: fullDesc,
       url: canonicalUrl,
       siteName: baseTitle,
-      locale: "en_US",
+      locale: "en_IN",
       type: "website",
       images: [
         {

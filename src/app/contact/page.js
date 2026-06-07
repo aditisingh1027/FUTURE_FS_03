@@ -6,7 +6,7 @@ import styles from './contact.module.css';
 
 export const metadata = getMetadata({
   title: "Visit Us & Contact Details",
-  description: "Check our hours of operation, locate our cozy Atlanta library café on the map, dial our phone line, or contact us directly via email or WhatsApp chat.",
+  description: "Check our hours of operation, locate our cosy Bengaluru library café on the map, dial our phone line, or contact us directly via email or WhatsApp chat.",
   path: "/contact"
 });
 
@@ -27,11 +27,13 @@ export default function ContactPage() {
           <div className={styles.detailsColumn}>
             <div className={styles.infoBlock}>
               <h2 className={styles.blockTitle}>Our Address</h2>
-              <p className={styles.infoText}>
-                
-              </p>
-              <a 
-                href="https://maps.google.com/?q=42+Library+Lane+Atlanta+GA+30309"
+              <address className={styles.infoText}>
+                12, 100 Feet Road, HAL 2nd Stage,<br />
+                Indiranagar, Bengaluru – 560 038,<br />
+                Karnataka, India
+              </address>
+              <a
+                href="https://maps.google.com/?q=100+Feet+Road+Indiranagar+Bengaluru+Karnataka+560038"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.mapLink}
@@ -45,17 +47,17 @@ export default function ContactPage() {
               <ul className={styles.contactList}>
                 <li>
                   <span className={styles.contactLabel}>Phone:</span>
-                  <a href="tel:+15550199" className={styles.contactValue}>+1 (555) 0199</a>
+                  <a href="tel:+910000000000" className={styles.contactValue}>+91 00000 00000</a>
                 </li>
                 <li>
                   <span className={styles.contactLabel}>WhatsApp:</span>
-                  <a 
-                    href="https://wa.me/15550199?text=Hi!%20I%20have%20a%20general%20inquiry%20for%20The%20Reading%20Room%20Café." 
+                  <a
+                    href="https://wa.me/910000000000?text=Hi!%20I%20have%20a%20general%20inquiry%20for%20The%20Reading%20Room%20Café."
                     target="_blank"
                     rel="noopener noreferrer"
                     className={styles.contactValue}
                   >
-                    +1 (555) 0199 (Text Only)
+                    +91 00000 00000 (Text Only)
                   </a>
                 </li>
                 <li>
@@ -85,7 +87,7 @@ export default function ContactPage() {
             {/* Vector Map Mock */}
             <div className={styles.mapMockWrapper}>
               <a
-                href="https://maps.google.com/?q=42+Library+Lane+Atlanta+GA+30309"
+                href="https://maps.google.com/?q=100+Feet+Road+Indiranagar+Bengaluru+Karnataka+560038"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.mapMock}
@@ -97,7 +99,7 @@ export default function ContactPage() {
                   <circle cx="200" cy="100" r="16" fill="var(--accent-color)" opacity="0.15" />
                   <circle cx="200" cy="100" r="6" fill="var(--accent-color)" />
                   <text x="200" y="80" textAnchor="middle" fill="var(--text-color)" fontFamily="var(--font-sans)" fontSize="10" fontWeight="700" letterSpacing="0.08em">THE READING ROOM</text>
-                  <text x="200" y="125" textAnchor="middle" fill="var(--text-muted)" fontFamily="var(--font-sans)" fontSize="8.5">42 Library Lane, Atlanta, GA</text>
+                  <text x="200" y="125" textAnchor="middle" fill="var(--text-muted)" fontFamily="var(--font-sans)" fontSize="8.5">100 Feet Road, Indiranagar, Bengaluru</text>
                 </svg>
                 <div className={styles.mapOverlay}>
                   <span>Get Directions on Google Maps</span>

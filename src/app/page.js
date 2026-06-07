@@ -6,19 +6,19 @@ import { getMetadata } from '../lib/seo';
 import styles from './page.module.css';
 
 export const metadata = getMetadata({
-  title: "The Reading Room Café – Midtown Atlanta",
-  description: "Explore our specialty coffee, curated bookshelves, and quiet workspaces in Midtown Atlanta."
+  title: "The Reading Room Café – Indiranagar, Bengaluru",
+  description: "Explore our specialty coffee, curated bookshelves, and quiet workspaces in Indiranagar, Bengaluru."
 });
 
 export default function Home() {
   const dailyRecommendations = {
-    Monday: { title: 'Ethiopian Yirgacheffe', desc: 'A single-origin pour-over with bright citrus notes.', price: '$5.00 — V60' },
-    Tuesday: { title: 'Colombian Dark Roast', desc: 'Rich, full-bodied beans perfect for an afternoon boost.', price: '$5.50 — Drip' },
-    Wednesday: { title: 'Guatemalan Honey', desc: 'Smooth honeyed flavor with a silky finish.', price: '$5.75 — Chemex' },
-    Thursday: { title: 'Kenyan AA', desc: 'Vibrant acidity and fruity notes.', price: '$6.00 — Espresso' },
-    Friday: { title: 'Brazilian Blend', desc: 'Nutty and chocolatey, great for the weekend.', price: '$5.25 — French Press' },
-    Saturday: { title: 'Sumatra Mandheling', desc: 'Earthy and full, perfect for lazy mornings.', price: '$5.50 — Cold Brew' },
-    Sunday: { title: 'House Special', desc: 'Our barista’s pick of the week.', price: '$6.00 — Specialty' }
+    Monday: { title: 'Ethiopian Yirgacheffe', desc: 'A single-origin pour-over with bright citrus notes.', price: '₹220 — V60' },
+    Tuesday: { title: 'Colombian Dark Roast', desc: 'Rich, full-bodied beans perfect for an afternoon boost.', price: '₹240 — Drip' },
+    Wednesday: { title: 'Guatemalan Honey', desc: 'Smooth honeyed flavor with a silky finish.', price: '₹260 — Chemex' },
+    Thursday: { title: 'Kenyan AA', desc: 'Vibrant acidity and fruity notes.', price: '₹270 — Espresso' },
+    Friday: { title: 'Brazilian Blend', desc: 'Nutty and chocolatey, great for the weekend.', price: '₹230 — French Press' },
+    Saturday: { title: 'Sumatra Mandheling', desc: 'Earthy and full, perfect for lazy mornings.', price: '₹250 — Cold Brew' },
+    Sunday: { title: 'House Special', desc: "Our barista's pick of the week.", price: '₹280 — Specialty' }
   };
 
   const weeklyHighlights = [
@@ -28,11 +28,11 @@ export default function Home() {
   ];
 
   const testimonials = [
-    { quote: "The quietest workspace in the neighborhood. Power outlets are plentiful, the WiFi is fast, and the tall bookshelves make me feel incredibly productive.", author: "Eleanor Vance", role: "Freelance Copywriter" },
-    { quote: "A rare café that genuinely respects peace. No loud speakers—just the soft hum of conversation and the aroma of fresh cardamom buns.", author: "Dr. Liam O'Connor", role: "Local Historian" }
+    { quote: "The quietest workspace in the neighbourhood. Power outlets are plentiful, the WiFi is fast, and the tall bookshelves make me feel incredibly productive.", author: "Priya Nair", role: "Freelance Copywriter" },
+    { quote: "A rare café that genuinely respects peace. No loud speakers—just the soft hum of conversation and the aroma of fresh cardamom buns.", author: "Dr. Arjun Mehta", role: "Local Historian" }
   ];
 
-  const today = new Date().toLocaleString('en-US', { weekday: 'long' });
+  const today = new Date().toLocaleString('en-IN', { weekday: 'long' });
   const rec = dailyRecommendations[today] || dailyRecommendations['Monday'];
 
   return (
@@ -42,7 +42,7 @@ export default function Home() {
         <div className={`${styles.heroContent} container`}>
           <div className={styles.heroText}>
             <h1 className={styles.title}>A quiet sanctuary for coffee & literature.</h1>
-            <p className={styles.subtitle}>The Reading Room Café is an independent neighborhood space tailored for remote workers, book lovers, and students. Escape the rush and find your corner.</p>
+            <p className={styles.subtitle}>The Reading Room Café is an independent neighbourhood space tailored for remote workers, book lovers, and students. Escape the rush and find your corner.</p>
             <div className={styles.ctaGroup}>
               <Link href="/menu" className={styles.primaryCta}>View Menu</Link>
               <Link href="/contact" className={styles.secondaryCta}>Get Directions</Link>
@@ -111,7 +111,7 @@ export default function Home() {
               <span className={styles.sectionLabel}>The Philosophy</span>
               <h2 className={styles.sectionTitle}>Designed for intentional focus.</h2>
               <p className={styles.paragraph}>We believe that the best work is born in calm environments. The Reading Room Café was established to merge the aromatic sensory comfort of a specialty coffee shop with the serene focus of an independent library.</p>
-              <p className={styles.paragraph}>Our space is built around high‑speed Wi‑F i, dedicated laptop‑friendly desks with built‑in power outlets, and bookshelves filled with literature. Whether you're studying for an exam, writing a manuscript, or simply turning pages, there's a space here for you.</p>
+              <p className={styles.paragraph}>Our space is built around high‑speed Wi‑Fi, dedicated laptop‑friendly desks with built‑in power outlets, and bookshelves filled with literature. Whether you're studying for an exam, writing a manuscript, or simply turning pages, there's a space here for you.</p>
             </div>
           </div>
         </div>
@@ -125,7 +125,7 @@ export default function Home() {
           <div className={styles.testimonialsGrid}>
             {testimonials.map((t, idx) => (
               <blockquote key={idx} className={styles.testimonialCard}>
-                <span className={styles.quoteIcon} aria-hidden="true">“</span>
+                <span className={styles.quoteIcon} aria-hidden="true">"</span>
                 <p className={styles.quoteText}>{t.quote}</p>
                 <cite className={styles.quoteAuthor}>
                   <span className={styles.authorName}>{t.author}</span>

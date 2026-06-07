@@ -4,15 +4,15 @@ import styles from './FAB.module.css';
 export default function FAB() {
   return (
     <div className={styles.fabBar} aria-label="Quick Contacts">
-      <a href="tel:+15550199" className={styles.actionItem}>
-        <svg 
-          width="18" 
-          height="18" 
-          viewBox="0 0 24 24" 
-          fill="none" 
-          stroke="currentColor" 
-          strokeWidth="2.5" 
-          strokeLinecap="round" 
+      <a href="tel:+910000000000" className={styles.actionItem}>
+        <svg
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2.5"
+          strokeLinecap="round"
           strokeLinejoin="round"
           aria-hidden="true"
         >
@@ -20,23 +20,23 @@ export default function FAB() {
         </svg>
         <span>Call Café</span>
       </a>
-      
+
       <div className={styles.divider} aria-hidden="true"></div>
-      
-      <a 
-        href="https://wa.me/15550199?text=Hi!%20I%20am%20planning%20to%20visit%20The%20Reading%20Room%20Café%20and%20wanted%20to%20ask..."
+
+      <a
+        href="https://wa.me/910000000000?text=Hi!%20I%20am%20planning%20to%20visit%20The%20Reading%20Room%20Café%20and%20wanted%20to%20ask..."
         target="_blank"
         rel="noopener noreferrer"
         className={styles.actionItem}
       >
-        <svg 
-          width="18" 
-          height="18" 
-          viewBox="0 0 24 24" 
-          fill="none" 
-          stroke="currentColor" 
-          strokeWidth="2.5" 
-          strokeLinecap="round" 
+        <svg
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2.5"
+          strokeLinecap="round"
           strokeLinejoin="round"
           aria-hidden="true"
         >
@@ -44,23 +44,23 @@ export default function FAB() {
         </svg>
         <span>WhatsApp</span>
       </a>
-      
+
       <div className={styles.divider} aria-hidden="true"></div>
-      
-      <a 
-        href="https://maps.google.com/?q=The+Reading+Room+Cafe" 
+
+      <a
+        href="https://maps.google.com/?q=100+Feet+Road+Indiranagar+Bengaluru+Karnataka+560038"
         target="_blank"
         rel="noopener noreferrer"
         className={styles.actionItem}
       >
-        <svg 
-          width="18" 
-          height="18" 
-          viewBox="0 0 24 24" 
-          fill="none" 
-          stroke="currentColor" 
-          strokeWidth="2.5" 
-          strokeLinecap="round" 
+        <svg
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2.5"
+          strokeLinecap="round"
           strokeLinejoin="round"
           aria-hidden="true"
         >
